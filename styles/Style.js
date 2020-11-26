@@ -1,41 +1,36 @@
 import {StyleSheet} from 'react-native'
 import {widthPercentageToDP as wp,heightPercentageToDP as hp} from 'react-native-responsive-screen'
 
-export const Style=StyleSheet.create(
+export const Style = StyleSheet.create(
     {
-        mainStyle:{
-            flex:1,
-            justifyContent:'center',
-            alignItems:'center',
-            paddingRight:wp('5%'),
-            paddingLeft:wp('5%')
+        mainStyle : {
+            flex : 1,
+            justifyContent : 'center',
+            alignItems:'center'
         },
-        inputView:{
-            width:wp('96%'),
-            backgroundColor:'#eaeaea',
-            marginBottom:hp('2%'),
-            paddingBottom:hp('2%'),
+
+        textStyle : {
+            paddingLeft:wp('4%'),
+            paddingRight:wp('4%'),
             paddingTop:hp('1%'),
-            
+            paddingBottom:hp('1%'),
+            fontSize : hp('4%')
         },
-        inputStyle:{
-            width:wp('80%'),
+
+        rowStyle:{
+            flexDirection: 'row',
+            paddingBottom:hp('4%')
+        },
+
+        countStyle:{
+            fontSize: hp('5%')
+        },
+
+        textInputStyle:{
+            backgroundColor:'#ededed',
             paddingRight:wp('5%'),
-            paddingLeft:wp('5%')
-        },
-        boilTextView:{
-            alignSelf:'flex-start'
-        },
-        line:{
-            height:hp('.2%'),
-            width:wp('92%'),
-            backgroundColor:'black',
-            alignSelf:'flex-end',
-            marginRight:wp('1%')
-        },
-        boilTextStyle:{
-            fontSize:hp('3%'),
-            alignSelf:'flex-start'
+            paddingLeft:wp('5%'),
+            borderWidth:1
         }
     }
 )
